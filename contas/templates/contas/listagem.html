@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+
+<h1>Bem vindo ao meu site em DJANGO : LISTAGEM</h1>
+
+    <h2>Listagem</h2>
+    <ul>
+    {% for transacao in transacoes %}
+        <li> {{transacao.description}}  - R$ {{transacao.value}}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
